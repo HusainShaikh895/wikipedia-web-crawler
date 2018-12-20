@@ -38,7 +38,7 @@ while(not (title=="language" or title=="Language" or title=="languages" or title
 	
 browser.close()
 
-if("language" in traversed or "Language" in traversed):
+if("language" in traversed or "Language" in traversed or "languages" in traversed or "Languages" in traversed):
 	flag=1
 
 if(flag==1):
