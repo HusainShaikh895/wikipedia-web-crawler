@@ -19,10 +19,10 @@ title=WebDriverWait(browser,2).until(EC.presence_of_element_located((By.XPATH, '
 traversed.append(title.text)
 title=title.text
 flag=0
-if(title=="language" or title=="Language"):
+if(title=="language" or title=="Language" or title=="languages" or title=="Languages"):
 	flag=1
 count=0
-while(not (title=="language" or title=="Language" or flag==1)):
+while(not (title=="language" or title=="Language" or title=="languages" or title=="Languages" or flag==1)):
 	new_url=WebDriverWait(browser,2).until(EC.presence_of_element_located((By.XPATH, '//*[@id="mw-content-text"]/div/p/a')))
 	count+=1
 	title=str(new_url.text)
